@@ -13,7 +13,7 @@ namespace Demo.Abstract
         public abstract double Parimeter { get; }
         public abstract double CalcArea();
     }
-    internal class Rectanglee : RectBase 
+    internal class Rectanglee : RectBase
     {
         public override double Parimeter { get { return (Hight + Width) * 2; } }
     }
@@ -41,7 +41,8 @@ namespace Demo.Abstract
         public override double Parimeter { get { return 2 * 3.14 * Width; } }
         public override double CalcArea()
         {
-            return 3.14 * Math.Pow(Width,2);
+            return 3.14 * Math.Pow(Width, 2);
         }
     }
+    
 }
