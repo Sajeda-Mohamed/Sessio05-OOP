@@ -54,6 +54,20 @@ namespace Demo
             int X = (int)C1;
             //int X = C1; // notRecomended
             #endregion
+
+            #region Casting OverLoading
+            //Employee employee = new Employee()
+            //{
+            //    Id = 1,
+            //    Name = "Sajeda Mohamed",
+            //    Password = " Password",
+            //    SecurityStamp = "SDK123",
+            //};
+
+            //EmployeeViewModel employeeViewModel = (EmployeeViewModel)employee;
+            //Console.WriteLine(employeeViewModel.FName);
+            //Console.WriteLine(employeeViewModel.LName);
+            #endregion
         }
     }
 }

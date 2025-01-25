@@ -14,10 +14,10 @@ namespace Demo.Operator_OverLoading
         #endregion
 
         #region Methods
-        public override string ToString()
-        {
-            return $"{Reel} + {Imagine}i";
-        }
+        //public override string ToString()
+        //{
+        //    return $"{Reel} + {Imagine}i";
+        //}
 
         public static Complex operator +(Complex Left, Complex Right)
         {
