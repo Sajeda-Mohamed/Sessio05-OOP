@@ -18,6 +18,7 @@ namespace Demo.Sealed_Classes
         }
 
         #endregion
+
         #region Methods
         public virtual void Print()
         {
@@ -31,6 +32,7 @@ namespace Demo.Sealed_Classes
         public override int Salary
         { get => base.Salary; set => base.Salary = value + 1500; } 
         #endregion
+
         #region Methods
         public sealed override void Print()
         {

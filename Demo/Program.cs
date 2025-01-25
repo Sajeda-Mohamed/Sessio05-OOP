@@ -1,7 +1,9 @@
-﻿using Demo.Abstract;
+﻿using System;
+using Demo.Abstract;
 using Demo.Operator_OverLoading;
 using Demo.Sealed_Classes;
 using System.Drawing;
+using Demo.Partial_Classes;
 
 namespace Demo
 {
@@ -34,12 +36,12 @@ namespace Demo
             //int y = 6;
             //int sum = x + y;
 
-            Complex C1 = new Complex() { Reel = 3 , Imagine = 2};
-            Complex C2 = new Complex() { Reel = 1 , Imagine = 4};
+            //Complex C1 = new Complex() { Reel = 3 , Imagine = 2};
+            //Complex C2 = new Complex() { Reel = 1 , Imagine = 4};
 
-            Complex C3 = default; //
-            Console.WriteLine(C1);
-            Console.WriteLine(C2);
+            //Complex C3 = default; //
+            //Console.WriteLine(C1);
+            //Console.WriteLine(C2);
 
             //C3 = C1 + C2;// Invalid
             //Console.WriteLine(C3);
@@ -52,7 +54,7 @@ namespace Demo
             //else
             //    Console.WriteLine("C2 greater than C1");
 
-            int X = (int)C1;
+            //int X = (int)C1;
             //int X = C1; // notRecomended
             #endregion
 
@@ -71,19 +73,23 @@ namespace Demo
             #endregion
 
             #region Sealed Class
-            Parent parent = new Parent();
-            Console.WriteLine(parent);
+            //Parent parent = new Parent();
+            //Console.WriteLine(parent);
 
-            Child child = new Child();
-            Console.WriteLine(child);
+            //Child child = new Child();
+            //Console.WriteLine(child);
 
-            GrandChild grandChild = new GrandChild();
-            Console.WriteLine(grandChild);
+            //GrandChild grandChild = new GrandChild();
+            //Console.WriteLine(grandChild);
 
-            parent.Salary = 1000;
-            Console.WriteLine(parent.Salary);
-            child.Salary = 1000;
-            Console.WriteLine(child.Salary);
+            //parent.Salary = 1000;
+            //Console.WriteLine(parent.Salary);
+            //child.Salary = 1000;
+            //Console.WriteLine(child.Salary);
+            #endregion
+
+            #region Partial Class
+            
             #endregion
         }
     }
