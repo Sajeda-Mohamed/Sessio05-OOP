@@ -1,5 +1,6 @@
 ﻿using Demo.Abstract;
 using Demo.Operator_OverLoading;
+using Demo.Sealed_Classes;
 using System.Drawing;
 
 namespace Demo
@@ -67,6 +68,22 @@ namespace Demo
             //EmployeeViewModel employeeViewModel = (EmployeeViewModel)employee;
             //Console.WriteLine(employeeViewModel.FName);
             //Console.WriteLine(employeeViewModel.LName);
+            #endregion
+
+            #region Sealed Class
+            Parent parent = new Parent();
+            Console.WriteLine(parent);
+
+            Child child = new Child();
+            Console.WriteLine(child);
+
+            GrandChild grandChild = new GrandChild();
+            Console.WriteLine(grandChild);
+
+            parent.Salary = 1000;
+            Console.WriteLine(parent.Salary);
+            child.Salary = 1000;
+            Console.WriteLine(child.Salary);
             #endregion
         }
     }
